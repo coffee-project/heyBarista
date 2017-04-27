@@ -1,4 +1,26 @@
-<h1>
-  {{title}}
-</h1>
-<router-outlet></router-outlet>
+<div fxLayout="column">
+
+    <div class="header" fxLayout="row" fxLayoutAlign="center center">
+
+        <h1>
+            {{title}}
+        </h1>
+        <router-outlet></router-outlet>
+    </div>
+
+    <div fxLayout="row">
+
+        <div class="left" fxFlex="20">
+            LEFT: 20% wide
+        </div>
+
+        <div class="middle" fxFlex>
+            MIDDLE: all the rest
+        </div>
+
+        <div class="right" fxFlex="20">
+            RIGHT: 20% wide
+        </div>
+
+    </div>
+</div>
