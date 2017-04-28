@@ -1,23 +1,48 @@
 <div class="app" fxLayout="column">
 
     <hey-barista-header></hey-barista-header>
-        <h2>{{espresso.name}} profile.</h2>
-<div>
-  <label>id: </label>
-  {{espresso.id}}
-</div>
-<div>
-  <label>barista: </label>
-  {{espresso.barista}}
-</div>
-<div>
-  <label>name: </label>
-  {{espresso.name}}
-</div>
-<div>
-  <label>time: </label>
-  {{espresso.time}}
-</div>
+
+    <ul class="thisEspressoRecipe">
+        <li *ngFor="let thisEspressoRecipe of espressoRecipes" (click)="onSelect(thisEspressoRecipe)" [class.selected]="thisEspressoRecipe === espressoRecipe" fxLayout>
+
+            {{thisEspressoRecipe.name}}
+            <span class="barista" fxLayout>{{thisEspressoRecipe.barista}}</span >
+
+        </li>
+    </ul>
+
+    <div *ngIf="espressoRecipe">
+        <h2>{{espressoRecipe.name}} profile.</h2>
+        <div>
+            <label>id: </label> {{espressoRecipe.id}}
+        </div>
+        <div>
+            <label>name: </label>
+            <input [(ngModel)]="espressoRecipe.name" placeholder="name" />
+        </div>
+        <div>
+            <label>barista: </label>
+            <input [(ngModel)]="espressoRecipe.barista" placeholder="barista" />
+        </div>
+    </div>
+
+    <!--<h2>{{espresso.name}} profile.</h2>
+    <div>
+        <label>id: </label> {{espresso.id}}
+    </div>
+    <div>
+        <label>barista: </label> {{espresso.barista}}
+        <input [(ngModel)]="espresso.barista" placeholder="barista" />
+    </div>
+    <div>
+        <label>name: </label> {{espresso.name}}
+        <input [(ngModel)]="espresso.name" placeholder="name" />
+    </div>
+    <div>
+        <label>time: </label> {{espresso.time}}
+    </div>-->
+
+
     <hey-barista-main>
         <router-outlet></router-outlet>
     </hey-barista-main>

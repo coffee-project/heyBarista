@@ -4,6 +4,7 @@ export class EspressoRecipe {
     barista: string;
     name: string;
     roastery: string;
+
     process: string;
     roastdate: string;
     dose: number;
