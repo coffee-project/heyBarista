@@ -1,0 +1,42 @@
+.header {
+    font-family: Arial Black, Arial Bold, Gadget, sans-serif;
+    text-transform: capitalize;
+    padding: 50px 20px 0px;
+}
+
+.logo {
+    margin-bottom: 0px;
+    border-bottom-width: 1px;
+    border-bottom-color: black;
+    border-bottom-style: dotted;
+}
+
+.logoTitle {
+    font-family: Arial Black, Arial Bold, Gadget, sans-serif;
+    text-transform: uppercase;
+    margin-top: 0px;
+}
+
+.footer {
+    font-family: Arial Black, Arial Bold, Gadget, sans-serif;
+    text-transform: capitalize;
+    padding: 20px 20px;
+}
+
+.footerText {
+    border-top-width: 1px;
+    border-top-color: black;
+    border-top-style: dotted;
+}
+
+// .left {
+//     background-color: lightblue;
+// }
+// .right {
+//     background-color: pink;
+// }
+.middle {
+    padding: 0px 20px;
+    // color: white;
+    // background-color: black;
+}
