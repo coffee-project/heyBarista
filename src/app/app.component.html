@@ -1,41 +1,9 @@
 <div fxLayout="column">
 
-    <!--<div class="header" fxLayout="row" fxLayout.xs="column" fxLayout.sm="column" 
-    fxLayoutAlign="center center"
-    >-->
-    <div class="header" fxLayout="column" fxLayout.xs="column" fxLayout.sm="column">
+    <hey-barista-header></hey-barista-header>
 
-        <h1 class="logo" fxLayout="row" fxLayoutAlign="start end" [style.xs]="{'font-size.rem': 1.5 }" [style.sm]="{'font-size.rem': 2}" [style.md]="{'font-size.rem': 3}" [style.lg]="{'font-size.rem': 4}" [style.xl]="{'font-size.rem': 4}" fxFlex>
-
-            {{ title }}
-
-        </h1>
-
-
-
-
-
-
-        <h3 class="logoTitle" fxLayout="row" fxLayoutAlign="end start" fxFlex><small>
-
-            {{title}}       </small></h3>
-
-    </div>
-
-    <div fxLayout="row" fxLayout.xs="column" fxLayout.sm="column">
-
-        <div class="left" fxFlex="20">
-            LEFT: 20% wide
-        </div>
-
-        <div class="middle" fxFlex>
-            MIDDLE: all the rest
-            <router-outlet></router-outlet>
-        </div>
-
-        <div class="right" fxFlex="20">
-            RIGHT: 20% wide
-        </div>
-
-    </div>
+    <hey-barista-main>
+        <router-outlet></router-outlet>
+    </hey-barista-main>
+    <hey-barista-footer></hey-barista-footer>
 </div>
