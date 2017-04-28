@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Karla:400,700|Montserrat');
+
 .header {
     font-family: Arial Black, Arial Bold, Gadget, sans-serif;
     text-transform: capitalize;
@@ -12,14 +14,16 @@
 }
 
 .logoTitle {
-    font-family: Arial Black, Arial Bold, Gadget, sans-serif;
+    font-family: 'Karla', sans-serif;
+    font-size: 1.2em;
     text-transform: uppercase;
     margin-top: 0px;
 }
 
 .footer {
-    font-family: Arial Black, Arial Bold, Gadget, sans-serif;
-    text-transform: capitalize;
+    font-family: 'Karla', sans-serif;
+    font-size: 1.2em;
+    text-transform: uppercase;
     padding: 20px 20px;
 }
 
@@ -29,14 +33,6 @@
     border-top-style: dotted;
 }
 
-// .left {
-//     background-color: lightblue;
-// }
-// .right {
-//     background-color: pink;
-// }
 .middle {
     padding: 0px 20px;
-    // color: white;
-    // background-color: black;
 }

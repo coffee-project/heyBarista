@@ -1,7 +1,23 @@
 <div class="app" fxLayout="column">
 
     <hey-barista-header></hey-barista-header>
-
+        <h2>{{espresso.name}} profile.</h2>
+<div>
+  <label>id: </label>
+  {{espresso.id}}
+</div>
+<div>
+  <label>barista: </label>
+  {{espresso.barista}}
+</div>
+<div>
+  <label>name: </label>
+  {{espresso.name}}
+</div>
+<div>
+  <label>time: </label>
+  {{espresso.time}}
+</div>
     <hey-barista-main>
         <router-outlet></router-outlet>
     </hey-barista-main>
