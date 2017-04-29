@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Karla:400,700|Montserrat');
-
 .header {
     font-family: Arial Black, Arial Bold, Gadget, sans-serif;
     text-transform: capitalize;
     padding: 50px 20px 0px;
+    z-index: 10; // emmet z10
 }
 
 .logo {

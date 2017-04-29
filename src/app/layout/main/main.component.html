@@ -5,7 +5,13 @@
     </div>
 
     <div class="middle" fxFlex>
-        MIDDLE: all the rest
+        <md-toolbar color="primary" class="mat-elevation-z10" fxLayout="row" fxLayoutAlign="space-around none" fxLayoutGap="10px">
+
+            <button md-button routerLink="home">home</button>
+            <button md-button routerLink="espresso-journal">espresso journal</button>
+            <button md-button routerLink="espresso-journal-entry">new entry</button>
+        </md-toolbar>
+        <router-outlet></router-outlet>
     </div>
 
     <div class="right" fxFlex="10">

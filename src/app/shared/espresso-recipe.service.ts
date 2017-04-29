@@ -1,5 +1,7 @@
-import { EspressoRecipe } from './espresso-recipe.model';
-export const ESPRESSORECIPES: EspressoRecipe[] = [
+import { Injectable } from '@angular/core';
+import { EspressoRecipe } from './../shared';
+
+const ESPRESSORECIPES: EspressoRecipe[] = [
 {
     id: 1,
     date: 'string',
@@ -47,6 +49,16 @@ export const ESPRESSORECIPES: EspressoRecipe[] = [
     temperature: 5,
     grindsetting: 6,
     flavour: 'Cocoa Nibs, Cherry, Nutmeg'
-  },
+  }
 
 ];
+
+@Injectable()
+export class EspressoRecipeService {
+
+  constructor() { }
+
+getEspressoRecipes(): EspressoRecipe[] {
+    return ESPRESSORECIPES;
+}
+}

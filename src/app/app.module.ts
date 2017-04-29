@@ -16,13 +16,19 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './layout/header/header.component';
 import { FooterComponent } from './layout/footer/footer.component';
 import { MainComponent } from './layout/main/main.component';
+import { HomeComponent } from './home/home.component';
+import { EspressoJournalComponent } from './espresso-journal/espresso-journal.component';
+import { EspressoJournalEntryComponent } from './espresso-journal-entry/espresso-journal-entry.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     FooterComponent,
-    MainComponent
+    MainComponent,
+    HomeComponent,
+    EspressoJournalComponent,
+    EspressoJournalEntryComponent
   ],
   imports: [
     BrowserModule,
@@ -35,7 +41,6 @@ import { MainComponent } from './layout/main/main.component';
     AngularFireModule.initializeApp(firebaseConfig)
   ],
   providers: [
-    
   ],
   bootstrap: [AppComponent]
 })
