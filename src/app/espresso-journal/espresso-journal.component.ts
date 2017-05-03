@@ -11,7 +11,7 @@ export class EspressoJournalComponent implements OnInit {
 
   espressoRecipe: EspressoRecipe;
   espressoRecipes: EspressoRecipe[];
-  constructor(private espressoRecipeService: EspressoRecipeService) { }
+  constructor(public espressoRecipeService: EspressoRecipeService) { }
 
   ngOnInit(): void {
     this.espressoRecipes = this.espressoRecipeService.getEspressoRecipes();
